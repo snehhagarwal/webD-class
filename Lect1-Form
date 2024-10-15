@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <style>
+        body{
+            background-color: burlywood;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            border: 2px dashed black;
+            padding: 5px;
+            box-shadow: 8px 8px 2px black;
+        }
+        div label,input{
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+     <h1> Introduction </h1>
+     <form action="actions.js">
+     <div>
+         <fieldset>
+             <legend>PERSONAL DETAILS</legend>
+     <label for="name">Name : </label>
+     <input type="text" id="name" placeholder="Enter your name">
+     <br>
+     <span>Gender:  </span>
+     <label for="gender">Male</label>
+    <input type="radio" id="gender" name="val" value="male">
+    <label for="gender">Female</label>
+    <input type="radio" id="gender" name="val" value="male">
+    <br>
+    <label for="selection">City : </label>
+    <select id="selection">
+        <option val="mathura">Mathura</option>
+        <option val="agra">Agra</option>
+        <option val="Pilibhit" selected>Pilibhit</option>
+    </select>
+    <br>
+    <label for="number">Number</label>
+    <input type="number" id="number" placeholder="Enter you number">
+    <br>
+    <label for="email">Email :</label>
+    <input type="text" id="email" placeholder="Enter your mail">
+    <br>
+     <label for="code">Password:</label>
+     <input type="text" id="code" placeholder="enter the password">
+     <br>
+         <label for="dob">Date of Birth :</label>
+         <input type="date" id="dob" placeholder="Enter your dob">
+         <br>
+         <label for="file">Place your file :</label>
+         <input type="file" id="file">
+         <br>
+        <textarea type="text" placeholder="Enter your comment"></textarea>
+         <br>
+         <button>Submit</button>
+         <div>
+     </form>
+ </fieldset>
+</body>
+</html>
