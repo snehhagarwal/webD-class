@@ -1,0 +1,30 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid red;
+    /* justify-content: flex-end; */
+    /* align-items: flex-end; */
+    height: 700px;
+    /* flex-wrap: wrap; */
+    /* align-content: center; */
+    gap: 10px 20px;
+}
+.item{
+    border: 2px solid green;
+    /* height: 100px;
+    width: 100px; */
+}
+#item1{
+   order: 1; 
+   /* flex-grow: 4; */
+   /* flex-shrink: 2; */
+   /* flex-basis: 300px; */
+   align-self: center;
+}
+#item3{
+    order:2;
+    /* flex-grow: 5; */
+}
+#item5{
+   order: 3; 
+}
